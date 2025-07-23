@@ -1,7 +1,7 @@
 # AI-Cost-Optimization-Advisor-Agent-
 The AI Cost Optimization Advisor Agent is a multi-agent system built in Lyzr Studio to assist enterprises in optimizing costs associated with generative AI adoption. 
 
-
+AGENT JSON
 
 {
   "_id": "6881182bc9c08f15927ffe2d",
@@ -31,3 +31,15 @@ The AI Cost Optimization Advisor Agent is a multi-agent system built in Lyzr Stu
   "updated_at": "2025-07-23T17:13:15.873000",
   "llm_credential_id": "lyzr_openai"
 }
+
+INFERENCE
+
+curl -X POST 'https://agent-prod.studio.lyzr.ai/v3/inference/chat/' \
+            -H 'Content-Type: application/json' \
+            -H 'x-api-key: sk-default-AAmRMqJZIOf6bDsjAkeNC7TwOU4FeLtu' \
+            -d '{
+              "user_id": "bittukumarr145@gmail.com",
+              "agent_id": "6881182bc9c08f15927ffe2d",
+              "session_id": "6881182bc9c08f15927ffe2d-o2rqlamfz3",
+              "message": ""
+              }'
